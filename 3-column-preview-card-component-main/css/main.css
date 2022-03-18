@@ -35,6 +35,18 @@ body {
 .columna {
   color: white;
   padding: 2rem;
+  /* todas las columnas tienen el 25%, salvo la activa que tendra el 50% */
+  width: 25%;
+  /* lo que salga del box que no se vea */
+  overflow: hidden;
+  /* para que tenga tiempo el desplazamiento */
+  transition: width 0.3s ease-in-out;
+  /* para que cuando pase el curso se vea que se puede clickear */
+  cursor: pointer;
+}
+
+.columna.activa {
+  width: 50%;
 }
 
 .columna:first-of-type {
@@ -66,6 +78,8 @@ body {
 
 .texto {
   font-size: 14px;
+  /* separo el boton de la parte inferior de los textos */
+  margin-bottom: 4rem;
 }
 
 .enlace {

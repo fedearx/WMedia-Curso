@@ -1,0 +1,89 @@
+/* ---------- Generales ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+/* ---------- Principal ---------- */
+.principal {
+  /* Indico que las cajas dentro de este box, se comporten como flex */
+  display: flex;
+  /* no quiero que sea mas grande que 768px */
+  max-width: 768px;
+  /* no quiero que sea mas chico que 320px */
+  min-width: 320px;
+}
+
+/* ---------- Columnas ----------*/
+
+.columna {
+  color: white;
+  padding: 2rem;
+}
+
+.columna:first-of-type {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.columna:last-of-type {
+  border-radius: 0 1rem 1rem 0;
+}
+
+/* colores de fondo */
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.titulo {
+  font-family: "Big Shoulders Display", cursive;
+  /* pone las letras en mayusculas */
+  text-transform: uppercase;
+}
+
+.texto {
+  font-size: 14px;
+}
+
+.enlace {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+}
+
+.sedans .enlace {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs .enlace {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury .enlace {
+  color: hsl(179, 100%, 13%);
+}
